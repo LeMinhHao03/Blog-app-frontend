@@ -24,5 +24,6 @@ module.exports = {
   "rules": {
       "react/jsx-uses-vars": "error",
       "react/jsx-uses-react": "error"
-  }
+  },
+  "no-unused-vars": ["warn", { "varsIgnorePattern": "VARIABLE_NAME"}]
 }
