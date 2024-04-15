@@ -14,7 +14,7 @@ const CreateBlog = () => {
     setHtml(e.target.value);
   }
 
-    const handleFileChange = async (e) => {
+  const handleFileChange = async (e) => {
         const file = e.target.files[0]
         const formData = new FormData();
         formData.append("image",file);
@@ -33,7 +33,8 @@ const CreateBlog = () => {
 
         setImageId(result.image.id);
 
-    }
+  }
+
   const {
     register,
     handleSubmit,
@@ -84,7 +85,7 @@ const CreateBlog = () => {
                     <div className='mb-3'>
                         <label className='form-label'>Description</label>
                         <Editor value={html} 
-                        containerProps={{ style: { height: '400px' } }}
+                        containerProps={{ style: { height: '600px' } }}
                         onChange={onChange} />
                         
                     </div>
